@@ -1,6 +1,10 @@
 {
     "files.associations": {
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "__functional_03": "cpp",
+        "memory": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp"
     }
 }
