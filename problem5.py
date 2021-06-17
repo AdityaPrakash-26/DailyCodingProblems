@@ -4,7 +4,7 @@ def cons(a, b):
     return pair
 
 def car(pair):
-    return pair(lambda a, b: a)
+    return pair(lambda a, b: a) #slice from b upto but not including a
 
 def cdr(pair):
     return pair(lambda a, b: b)
