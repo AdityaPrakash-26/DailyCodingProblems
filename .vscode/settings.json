@@ -5,6 +5,7 @@
         "__functional_03": "cpp",
         "memory": "cpp",
         "type_traits": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "unordered_map": "cpp"
     }
 }

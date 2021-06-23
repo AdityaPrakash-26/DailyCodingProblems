@@ -1,35 +1,26 @@
 /*
  * Question: 
- * Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
-
- * For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
+ * This question is asked by Google. 
+ * Given a string, reverse all of its characters 
+ * and return the resulting string.
 */
 
 #include <iostream>
-#include <unordered_map>
+#include <string>
 
 using namespace std;
 
 int main(){
-    int t;
-    cin >> t;
-    while(t--){
-        int n,k;
-        cin>>n>>k;
+    string s;
+    getline(cin, s);
 
-        unordered_map<int,int> mp;
+    int i = 0, j = s.size() - 1;
 
-        int arr[n]; //or int * arr = new int[n] for dynamic initialization
-
-        for(int i = 0; i<n; i++){
-            cin>>arr[i];
-        }
-        for(int i = 0; i<n; i++){
-            int ans = k-arr[i];
-            if(mp.find(ans)==mp.end()){
-                cout<<ans<<endl;
-                break;
-            }
-        }
+    while(i<=j){
+        swap(s.at(i), s.at(j));
+        i++;
+        j--;
     }
+
+    cout<<s<<endl;
 }
