@@ -1,3 +1,11 @@
+/*
+ * This question is asked by Microsoft. Given an array of 
+ * strings, return the longest common prefix that is shared 
+ * amongst all strings.
+ * 
+ * Note: you may assume all strings only contain lowercase 
+ * alphabetical characters.
+*/
 #include <iostream>
 #include <vector>
 #include <string>
