@@ -18,14 +18,14 @@ int main() {
 
     unordered_map<int, int> hash;
     vector<int> result;
-    for (int i = 0; i < size; i++){
-        if (hash.count(targetSum - nums[i])) { // If the partner of this value to reach the target sum has been saved already
-            result.push_back(hash[targetSum - nums[i]]); // Get index of other value
+    for (int i = 0; i < sizeOfInputArray; i++){
+        if (hash.count(targetSum - arr[i])) { // If the partner of this value to reach the target sum has been saved already
+            result.push_back(hash[targetSum - arr[i]]); // Get index of other value
             result.push_back(i);
-            return result;
+            // return result;
         } else { // Pair has not yet been found, so save value to hash table
-            hash[nums[i]] = i;
+            hash[arr[i]] = i;
         }
     }
-    return result;
+    // return result;
 }
