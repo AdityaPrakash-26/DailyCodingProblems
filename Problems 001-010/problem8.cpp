@@ -29,7 +29,7 @@ int main() {
             result.push_back(i);
             // return result;
         } else { // Pair has not yet been found, so save value to hash table
-            hash[arr[i]] = i;
+            hash[arr[i]]++;
         }
     }
     // return result;
