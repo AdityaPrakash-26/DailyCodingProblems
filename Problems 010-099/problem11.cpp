@@ -1,3 +1,8 @@
+/*
+ * This question is asked by Microsoft. Given a string, return the index of its first unique character. 
+ * If a unique character does not exist, return -1.
+*/
+
 #include <iostream>
 #include <string>
 using namespace std;
