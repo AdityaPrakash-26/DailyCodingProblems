@@ -1,4 +1,5 @@
-/* This question is asked by Apple. Given two sorted linked lists, merge them together 
+/* 
+ * This question is asked by Apple. Given two sorted linked lists, merge them together 
  * in ascending order and return a reference to the merged list
  */
 
