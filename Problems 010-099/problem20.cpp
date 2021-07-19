@@ -42,5 +42,4 @@ int main() {
     head->next->next->next = head->next;
 
     cout<<detectCycle(head)->data<<endl;
-
 }
