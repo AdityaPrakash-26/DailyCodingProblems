@@ -16,19 +16,33 @@ public:
 };
 
 ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
-    ListNode n(INT_MIN);
-    ListNode *p = &n;
-    while(l1 && l2){
-        if (l1->val < l2->val) {
-            p->next = l1;
+    ListNode* head = nullptr;
+    ListNode* tail = nullptr;
+    while (l1 != nullptr && l2 != nullptr) {
+        if (l1->val <= l2->val) {
+            if (head == nullptr) {
+                head = l1;
+                tail = l1;
+            } else {
+                tail->next = l1;
+                tail = l1;
+            }
             l1 = l1->next;
         } else {
-            p->next = l2;
+            if (head == nullptr) {
+                head = l2;
+                tail = l2;
+            } else {
+                tail->next = l2;
+                tail = l2;
+            }
             l2 = l2->next;
         }
-        p = p->next;
     }
-
-    p->next = l1 ? l1 : l2;
-    return n.next;
+    if (l1 != nullptr) {
+        tail->next = l1;
+    } else {
+        tail->next = l2;
+    }
+    return head;
 }
