@@ -1,3 +1,9 @@
+/*
+ * This question is asked by Microsoft. Given a linked list, containing 
+ * unique numbers, return whether or not it has a cycle.
+ * Note: a cycle is a circular arrangement (i.e. one node points back to a previous node)
+*/
+
 #include <iostream>
 using namespace std;
 
