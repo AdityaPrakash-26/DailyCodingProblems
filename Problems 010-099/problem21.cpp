@@ -1,3 +1,8 @@
+/*
+ * This question is asked by Facebook. Given a linked list, 
+ * containing unique values, reverse it, and return the result.
+*/
+
 #include <iostream>
 using namespace std;
 
